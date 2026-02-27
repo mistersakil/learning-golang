@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func conditions() {
+func main() {
 	age := 20
 
 	if age < 18 {
@@ -14,8 +14,4 @@ func conditions() {
 	} else {
 		fmt.Println("You are a senior.")
 	}
-}
-
-func main() {
-	conditions()
 }
