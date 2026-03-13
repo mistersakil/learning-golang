@@ -30,7 +30,7 @@ package helpers
 
 ## Internal Memory Management
 
-* Code segment - All function goes to code segment.
-* Data segment - All global variables goes to data segment.
+* Code segment - All functions, constants (all immutable segments) goes to code segment.
+* Data segment - All global variables (all mutable segments) goes to data segment.
 * Stack - All executable functions goes to stack frame.
-* Heap
+* Heap - Escape analysis for closer on stack frame
