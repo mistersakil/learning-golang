@@ -20,9 +20,20 @@ func getInputs() (int, int) {
 	return num1, num2
 }
 
+func callByValue(num int) {
+
+	num = num * num
+
+}
+
 func main() {
-	num1, num2 := getInputs()
-	fmt.Println("The sum of numbers is:", add(float64(num1), float64(num2)))
+	// num1, num2 := getInputs()
+	// fmt.Println("The sum of numbers is:", add(float64(num1), float64(num2)))
 	// fmt.Println(getNumbers(10, 20))
 	// fmt.Println(add(5.00000005, 3.00000003))
+
+	num := 5
+	fmt.Println("value of num before passing to function param: ", num)
+	callByValue(num)
+	fmt.Println("value of num after passing to function param: ", num)
 }
